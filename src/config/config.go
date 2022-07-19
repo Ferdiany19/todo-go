@@ -10,7 +10,8 @@ import (
 func ConnectDB() *gorm.DB {
 	dbHost := "localhost"
 	dbUser := "root"
-	dbPassword := "root"
+	// dbPassword := "root"
+	dbPassword := "&Jz|wiN^8c#v\bJS"
 	dbName := "go_todo"
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:8889)/%s?charset=utf8&parseTime=true&loc=Local", dbUser, dbPassword, dbHost, dbName)
