@@ -14,7 +14,7 @@ func ConnectDB() *gorm.DB {
 	dbPassword := "&Jz|wiN^8c#v\bJS"
 	dbName := "go_todo"
 
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:8889)/%s?charset=utf8&parseTime=true&loc=Local", dbUser, dbPassword, dbHost, dbName)
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?charset=utf8&parseTime=true&loc=Local", dbUser, dbPassword, dbHost, dbName)
 
 	db, errorDB := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if errorDB != nil {
